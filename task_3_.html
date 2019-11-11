@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+h1{
+text-align:center ;
+color: white;
+}
+p{
+font-size: 1.75em;
+text-align: center;
+color: white;
+padding: 1em;
+}
+body{
+ display: flex;
+height: 100vh;
+}
+.container-1{
+flex-basis: 20%;
+background-color: teal;
+
+}
+.container-2{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.inside-container-2{
+width: 100%;
+height: 100%;
+display: flex;
+}
+.inside-container-1{
+background-color: darkred;
+}
+.container-col-2{
+    background-color:green;
+}
+.container-col-1{
+    background-color: blue;
+}
+
+</style>
+</head>
+<body>
+    <div class="container-1">
+<h1>Меню</h1>
+</div>
+<div class="container-2">
+<div class="inside-container-1">
+<h1>Заголoвок</h1>
+</div>
+<div class="inside-container-2">
+<div class="container-col-1">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae non, quod expedita, eligendi dicta debitis?</p>
+</div>
+<div class="container-col-2">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. eligendi omnis assumenda! Recusandae, eum exercitationem.</p>
+</div>
+</div>
+</body>
+</html> 
