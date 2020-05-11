@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #252423;
+        }
+canvas {
+    background-color: #fdfff5;
+    border-radius: 5px;
+}
+#colors {
+    display: flex;
+}
+
+#colors > div {
+    width: 40px;
+    height: 40px;
+    opacity: .5;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#red {
+    background-color: red;
+}
+#green {
+    background-color:green
+}
+#blue {
+    background-color: blue;
+}
+#black {
+    background-color: black;
+}
+#clear {
+    border: 0;
+    background-color: #007fff;
+    font-size: 1.25em;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+        
+    
+    </style>
+</head>
+<body>
+    <div id="colors">
+        <div id="red" style="opacity: 1;"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+        <div id="black"></div>
+        <button id="clear">clear</button>
+    </div>
+    <div id="paint">
+    <canvas id="canvas" width="600" height="600"></canvas>
+</div>
+    <script>
+let canvas = document.querySelector('#canvas');
+let ctx = canvas.getContext("2d");
+let paint = document.querySelector('#paint');
+let colors = document.querySelectorAll('#colors > div');
+let defaultColor = 'red'
+let mouse = {x : 0, y : 0}
+
+        colors[0].style.opacity = 1;
+
+        for(let i = 0; i < colors.length; i++) {
+            const element = colors[i];
+            element.addEventListener('click', clickEvent)
+        }
+        function clickEvent(event) {
+            let selectedColor = event.target.id;
+            ctx.strokeStyle = selectedColor;
+            for(let i = 0; i < colors.length; i++) {
+            const el = colors[i];
+            if (selectedColor == el.id) {
+                el.style.opacity = 1;
+            } else {
+                el.style.opacity = 0.5;
+            }
+        }
+    }
+    canvas.addEventListener('mousemove', moveEvent)
+
+    function moveEvent(event) {
+        mouse.x = event.offsetX;
+        mouse.y = event.offsetY;
+}
+    // Что- то
+    ctx.lineJoin = 'round'
+    ctx.lineCap = 'round'
+    ctx.lineWidth = 5
+    ctx.strokeStyle = defaultColor
+
+
+
+    canvas.addEventListener('mousedown', mouseDown);
+
+    function mouseDown(event) {
+        ctx.beginPath();
+        ctx.moveTo(mouse.x, mouse.y);
+        canvas.addEventListener('mousemove', onPaint)
+    }
+
+    canvas.addEventListener('mousUp', mouseUp)
+
+    function mouseUp(event) {
+        canvas.removeEventListener('mousemove', onPaint)
+    }
+    function onPaint(event) {
+        ctx.lineTo(mouse.x, mouse.y);
+        ctx.stroke();
+    };
+    
+    
+    let clear = document.querySelector('#clear');
+    clear.addEventListener('click', clearEvent)
+    
+    function clearEvent(event) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+    }
+    
+    </script>
+</body>
+</html>
