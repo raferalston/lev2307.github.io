@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+        h2 > a {
+    color:oldlace;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#marks {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 101vh;
+    border: 5px #30e3ca groove;
+}
+#marks > h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    height: 60%;
+
+}
+.img-1 {
+    background-image: url('marks.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    height: 100%;
+    width: 50%;
+    background-color: #709FDC;
+}
+.img-1 > h2 {
+    color: white;
+    width: 60%;
+    height: 100vh;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #709FDC;
+}
+.text > h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    height: 60%;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #40514e;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+}
+.logo {
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .75em 1.25em;
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-items > a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1.1em;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #40514e;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+}
+.logo {
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .75em 1.25em;
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-items > a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1.1em;
+
+}
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover {
+    background-size: 100% 2px;
+}
+#about_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #709FDC;
+    padding: 5em 0;
+    border: 5px #00d1ff groove;
+}
+.img-2 {
+    background-image: url('ball.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    height: 100%;
+    width: 50%;
+}
+#about_me > h2 {
+    color: white;
+    font-size: 2em;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    width: 60%;
+    height: 60%;
+
+}
+.navbar > .logo {
+    font-size: 40px;
+    font-family: 'sonos-logoregular';
+    text-align: start;
+    background: -webkit-linear-gradient(left, #33235B, #D62229, #E97639, #792042, #33235B);
+    background: linear-gradient(left, #33235B, #D62229, #E97639, #792042, #33235B);
+    background-size: 3200px 200px;
+    margin-top: 0vh;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: animate-logo;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    transition: font-size 500ms ease-in-out;
+    }
+
+   @media only screen and (min-width: 40.063em) {
+    .logo {
+    margin-top: 30vh;
+    font-size: 80px;
+    }
+   }
+   @media only screen and (min-width: 64.063em) {
+    .logo {
+    margin-top: 25vh;
+    font-size: 80px;
+    }
+   }
+   @media only screen and (min-width: 90.063em) {
+    .logo {
+    margin-top: 20vh;
+    font-size: 80px;
+    }
+   }
+   @media only screen and (min-width: 120.063em) {
+    .logo {
+    margin-top: 15vh;
+    font-size: 80px;
+    }
+   }
+   @keyframes animate-logo {
+    0% {
+    background-position: 0 3200px;
+    }
+    100% {
+    background-position: 3200px 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+           Абросимов Лев
+</div>
+<div class="nav-items">
+            <a href="family.html">Моя семья</a>
+            <a href="hobbi.html"> Моё хобби</a>
+            <a href="my_rest.html">Мой отдых</a>
+    </div>
+</div>
+</div>
+    <div id="marks">
+        <div class="img-1">
+            <h2>
+                .
+            </h2>
+        </div>
+        <div class="text">
+        <h2>
+            Tут я расскажу о моей  школе. 
+           Учусь я в 6 классе. Мой самый любимый предмет в школе - английский язык. 
+           Оценки за год вы сможете увидеть на этой картинке.
+           Eщё в школе у меня есть очень много друзей. 
+           Надеюсь, у вас тоже.
+          
+        </h2>
+    </div>
+</div>
+</body>
+</html>

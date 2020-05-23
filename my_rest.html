@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #709FDC;
+}
+.cont {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.img-5 {
+    background-image: url('photo.JPG');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    width: 100vw;
+    height: 100vh;
+}
+.img-4 {
+    background-image: url('photos.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    width: 100vw;
+    height: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #40514e;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+}
+.logo {
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .75em 1.25em;
+    margin: 0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-items > a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1.1em;
+
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover {
+    background-size: 100% 2px;
+}
+.navbar > .logo {
+    font-size: 40px;
+    font-family: 'sonos-logoregular';
+    text-align: start;
+    background: -webkit-linear-gradient(left, #33235B, #D62229, #E97639, #792042, #33235B);
+    background: linear-gradient(left, #33235B, #D62229, #E97639, #792042, #33235B);
+    background-size: 3200px 200px;
+    margin-top: 0vh;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: animate-logo;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    transition: font-size 500ms ease-in-out;
+    }
+
+   @media only screen and (min-width: 40.063em) {
+    .logo {
+    margin-top: 30vh;
+    font-size: 80px;
+    }
+   }
+   @media only screen and (min-width: 64.063em) {
+    .logo {
+    margin-top: 25vh;
+    font-size: 80px;
+    }
+   }
+   @media only screen and (min-width: 90.063em) {
+    .logo {
+    margin-top: 20vh;
+    font-size: 80px;
+    }
+   }
+   @media only screen and (min-width: 120.063em) {
+    .logo {
+    margin-top: 15vh;
+    font-size: 80px;
+    }
+   }
+@keyframes animate-logo {
+    0% {
+    background-position: 0 3200px;
+    }
+    100% {
+    background-position: 3200px 0;
+    }
+}
+#text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+#text > span {
+    color: white;
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+           Абросимов Лев
+</div>
+<div class="nav-items">
+            <a href="family.html">Моя семья</a>
+            <a href="hobbi.html"> Моё хобби</a>
+            <a href="marks.html">Мои оценки </a>
+        </div>
+    </div>
+</div>
+<div class="cont">
+        <div class="img-4"></div>
+        <div class="img-5"></div>
+    </div>
+<div id="text">
+    <span>
+        
+    </span>
+</div>
+</body>
+</html>
