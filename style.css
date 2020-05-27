@@ -181,9 +181,9 @@ p {
 }
 @media (max-width: 499px)  {
     div {
-        font-size: .9em;
+        font-size: .8em;
     }
     .hit-the-floor {
-        font-size: 1em;
+        font-size: .9em;
     }
 }
