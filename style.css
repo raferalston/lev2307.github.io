@@ -146,7 +146,7 @@ p {
 }
 @media (max-width: 499px)  {
     .nav-items {
-        font-size: .5em;
+        font-size: .6em;
         padding: 0 ;
         display: flex;
         justify-content: space-evenly;
