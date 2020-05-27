@@ -25,7 +25,7 @@ body {
     color: white;
     font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
-    padding: .25em 1.25em;
+    padding: .15em 1.25em;
     margin: 0;
 }
 
@@ -184,6 +184,6 @@ p {
         font-size: .6em;
     }
     .hit-the-floor {
-        font-size: .7em;
+        font-size: .6em;
     }
 }
