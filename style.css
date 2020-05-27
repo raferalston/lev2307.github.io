@@ -162,14 +162,21 @@ p {
     }
 }
 @media (min-width: 500px)  {
+    .logo {
+        padding:0;
+        font-size: 40px;
+
+    }
+}
+@media (min-width: 500px)  {
     .nav-items {
-        font-size: .3em;
+        font-size: .7em;
         width: 50%;
     }
 }
 @media (min-width: 800px)  {
     .nav-items {
-        font-size: .5em;
+        font-size: 15px;
         width: 50%;
     }
 }
