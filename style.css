@@ -170,7 +170,7 @@ p {
 }
 @media (min-width: 500px)  {
     .nav-items {
-        font-size: .7em;
+        font-size: .6em;
         width: 50%;
     }
 }
