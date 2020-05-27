@@ -95,7 +95,6 @@ p {
 }
 
 .navbar > .logo {
-    font-size: 40px;
     font-family: 'sonos-logoregular';
     text-align: start;
     background: -webkit-linear-gradient(left, #33235B, #D62229, #E97639, #792042, #33235B);
@@ -145,28 +144,32 @@ p {
     background-position: 3200px 0;
     }
 }
-@media (max-width: 719px)  {
+@media (max-width: 499px)  {
     .nav-items {
         font-size: .5em;
         padding: 0 ;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+}
+@media (max-width: 499px)  {
+    .logo {
+        padding:0;
+        font-size: 20px;
 
     }
 }
 @media (min-width: 500px)  {
-    .logo {
-        padding:0;
-
-    }
-}
-@media (min-width: 720px)  {
     .nav-items {
-        font-size: .6em;
+        font-size: .3em;
         width: 50%;
     }
 }
 @media (min-width: 800px)  {
     .nav-items {
-        font-size: .7em;
+        font-size: .5em;
         width: 50%;
     }
 }
@@ -174,5 +177,13 @@ p {
     .nav-items {
         font-size: .8em;
         width: 50%;
+    }
+}
+@media (max-width: 499px)  {
+    div {
+        font-size: .9em;
+    }
+    .hit-the-floor {
+        font-size: 1em;
     }
 }
